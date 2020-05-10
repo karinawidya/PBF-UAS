@@ -36,7 +36,7 @@ class Home extends Component {
     render() {
         let boardsList = this.state.boards.map(boards => {
             return (
-                <div class="card" style={{ width: '40rem' }}>
+                <div class="card" style={{ width: '30rem' }}>
                     <div class="card-body">
                         <h5 class="card-title">{boards.title}</h5>
                         <p class="card-description">{boards.description}</p>
