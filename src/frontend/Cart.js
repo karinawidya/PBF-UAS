@@ -33,9 +33,6 @@ export class Cart extends Component {
             <div>
                 <Navbar/>
                 <br />
-                <h2 className="mt-5 d-flex justify-content-center">
-                Tidak ada produk yang ditambahkan
-                </h2>
                 <h3 className="mt-5 d-flex justify-content-center">
                 Yuk, tambahkan produk ke cart Anda! </h3>
                 <form class="col-sm-6 mx-auto" onSubmit={this.onSubmit}>
