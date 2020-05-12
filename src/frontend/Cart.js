@@ -6,6 +6,7 @@ export class Cart extends Component {
     constructor() {
         super();;
         this.state = {
+            username:'',
             produk:'',
             qty:''
         };
@@ -20,14 +21,14 @@ export class Cart extends Component {
     onSubmit = (e) => {
         e.preventDefault();
 
-        const { produk, qty } = this.state;
+        const { username, produk, qty } = this.state;
 
         firebase.database().ref("/Report Summary").push().set(this.state);
         this.props.history.push("/")
     }
 
     render() {
-        const { produk, qty } = this.state;
+        const { username, produk, qty } = this.state;
         return (
             <div>
                 <Navbar/>
@@ -38,6 +39,9 @@ export class Cart extends Component {
                 <h3 className="mt-5 d-flex justify-content-center">
                 Yuk, tambahkan produk ke cart Anda! </h3>
                 <form class="col-sm-6 mx-auto" onSubmit={this.onSubmit}>
+                <div class="form-group">
+                        <input type="text" class="form-control" id="username" name="username" value={username} onChange={this.onChange} placeholder="Input Username" />
+                    </div>
                 <div class="form-group">
                         <input type="text" class="form-control" id="produk" name="produk" value={produk} onChange={this.onChange} placeholder="Input Product" />
                     </div>
