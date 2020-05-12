@@ -11,7 +11,7 @@ export class About extends Component {
                 </h1>
                 <h2 className="mt-4 d-flex justify-content-center"> @amberleedhia </h2>
                 <h2 className="mt-4 d-flex justify-content-center"> +62899234789</h2>
-                <h3 className="mt-4 d-flex justify-content-center"> </h3>
+                <h4 className="mt-5 d-flex justify-content-center"> Dont forget to tag us on Instagram! </h4>
             </div>
         )
     }
