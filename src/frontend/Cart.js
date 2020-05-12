@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
+import Navbar from './Navbar';
 
-class Cart extends Component {
-
+export class Cart extends Component {
     render() {
-
         return (
-            <div className="container">
-                <h3>Cart</h3>
+            <div>
+                <Navbar/>
+                <h2 className="mt-5 d-flex justify-content-center">
+                Tidak ada produk yang ditambahkan
+                </h2>
+                <h3 className="mt-5 d-flex justify-content-center">
+                0 produk </h3>
             </div>
         )
     }
-
 }
 
-
-export default Cart; 
+export default Cart;
