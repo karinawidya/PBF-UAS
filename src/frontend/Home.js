@@ -36,12 +36,12 @@ class Home extends Component {
     render() {
         let boardsList = this.state.boards.map(boards => {
             return (
-                <div class="card" style={{ width: '35rem' }}>
+                <div class="card" style={{ width: '28rem' }}>
                     <div class="card-body">
                         <h5 class="card-title">{boards.title}</h5>
                         <p class="card-description">{boards.description}</p>
                         <p class="card-price">{boards.author}</p>
-                        <a href="#" class="btn btn-primary">Add to cart</a>
+                        <a href="cart" class="btn btn-primary">Add to cart</a>
                     </div>
                 </div>
             )
