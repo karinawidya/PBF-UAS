@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 
-export class About extends Component {
+export class Membership extends Component {
     render() {
         return (
             <div>
@@ -17,4 +17,4 @@ export class About extends Component {
     }
 }
 
-export default About;
+export default Membership;
