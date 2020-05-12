@@ -36,10 +36,7 @@ class Membership extends Component {
                 <Navbar />
                 <br />
                 <form class="col-sm-6 mx-auto" onSubmit={this.onSubmit}>
-                    <h3><strong>Membership Page</strong></h3>
-                    <h4 className="mt-3 d-flex justify-content-left">
-                        Please fill the page
-                    </h4>
+                    <h3><strong>Please Fill the Page</strong></h3>
                     <div class="form-group">
                         <input type="text" class="form-control" id="fullname" name="fullname" value={fullname} onChange={this.onChange} placeholder="Input Name" />
                     </div>
