@@ -32,7 +32,6 @@ export class Cart extends Component {
             <div>
                 <Navbar/>
                 <br />
-               
                 <h2 className="mt-5 d-flex justify-content-center">
                 Tidak ada produk yang ditambahkan
                 </h2>
